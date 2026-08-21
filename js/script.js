@@ -6,13 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('primary-nav-menu');
 
   // Highlight current page active nav link
-  const rawPath = (window.location.pathname.split('/').pop() || '').replace('.html', '');
+  const currentFileName = (window.location.pathname.split('/').pop() || 'index.html');
   document.querySelectorAll('.nav-link').forEach(link => {
     const href = (link.getAttribute('href') || '').split('#')[0];
-    const cleanHref = href.replace('https://zfingpt.com/', '').replace('.html', '').replace(/^\//, '');
-    const cleanCurrent = rawPath.replace('index', '').replace(/^\//, '');
-
-    if (cleanHref === cleanCurrent || (cleanCurrent === '' && (cleanHref === '' || cleanHref === 'index' || cleanHref === 'https://zfingpt.com/'))) {
+    if (href === currentFileName || (currentFileName === '' && (href === 'index.html' || href === ''))) {
       link.classList.add('active');
     }
   });
