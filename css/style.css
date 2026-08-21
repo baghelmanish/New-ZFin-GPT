@@ -907,6 +907,43 @@ h1, h2, h3, .hero-headline, .section-title {
   margin-top: 12px;
 }
 
+/* Contact Page — Form Card & Balanced Top/Bottom Padding */
+.contact-form-card {
+  padding: 32px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+@media (max-width: 992px) {
+  .contact-form-card {
+    padding: 24px !important;
+  }
+  .contact-form-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-card {
+    padding: 20px !important;
+  }
+  .contact-form-title {
+    font-size: 1.25rem;
+    margin-bottom: 16px !important;
+  }
+}
+
 /* Integration Strip Improvements & Logo Marquee */
 .integrations-wrapper, .logo-marquee-wrapper {
   overflow: hidden;
