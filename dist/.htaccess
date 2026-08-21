@@ -1,5 +1,23 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Redirect index.html to homepage
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
   RewriteRule ^index\.html$ https://zfingpt.com/ [R=301,L]
+
+  # Redirect .html extensions to clean URLs
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /services\.html\ HTTP/
+  RewriteRule ^services\.html$ /services [R=301,L]
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /about-us\.html\ HTTP/
+  RewriteRule ^about-us\.html$ /about-us [R=301,L]
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /contact\.html\ HTTP/
+  RewriteRule ^contact\.html$ /contact [R=301,L]
+
+  # Serve .html files for clean URLs (extensionless routing)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
 </IfModule>
