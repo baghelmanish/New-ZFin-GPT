@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D63FE"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="favCyanGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00B6FB"/>
+      <stop offset="100%" stop-color="#00C2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#050B16"/>
+  <g transform="translate(5, 5)">
+    <!-- Top Royal Blue Wing -->
+    <path d="M 15 15 L 105 15 L 75 45 L 15 15 Z" fill="url(#favBlueGrad)"/>
+    <!-- Diagonal Sky Cyan Bar -->
+    <path d="M 75 45 L 15 100 L 40 100 L 95 45 Z" fill="url(#favCyanGrad)"/>
+    <!-- Bottom Financial Bar Graph Wing -->
+    <path d="M 15 100 L 105 100 L 105 70 L 60 70 Z" fill="url(#favBlueGrad)"/>
+    <!-- Integrated Growth Chart Bars -->
+    <rect x="68" y="80" width="8" height="15" rx="2" fill="#00B6FB"/>
+    <rect x="80" y="74" width="8" height="21" rx="2" fill="#00B6FB"/>
+    <rect x="92" y="68" width="8" height="27" rx="2" fill="#00C2FF"/>
+    <!-- Connected Node Line Overlay -->
+    <line x1="38" y1="92" x2="72" y2="44" stroke="#FFFFFF" stroke-width="3" opacity="0.9"/>
+    <!-- Bottom Left Coral Orange Node -->
+    <circle cx="38" cy="92" r="11" fill="#FF6B35"/>
+    <circle cx="38" cy="92" r="4.5" fill="#FFFFFF"/>
+    <!-- Top Right Finance Green Node -->
+    <circle cx="72" cy="44" r="11" fill="#20C997"/>
+    <circle cx="72" cy="44" r="4.5" fill="#FFFFFF"/>
+  </g>
+</svg>

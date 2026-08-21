@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZFin GPT — Services | Financial Automation Infrastructure</title>
+
+  <!-- META & SEO -->
+  <meta name="description"
+    content="Explore ZFin GPT's 4 core financial automation services: MCP Infrastructure, Email & Zoho Automation, Financial Reporting, and Custom AI Agents." />
+  <meta name="keywords"
+    content="ZFin GPT Services, Financial Automation, MCP Infrastructure, Zoho Books Automation, AI Finance Agents, REST API Integration" />
+  <meta name="author" content="ZFin GPT" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- GLOBAL — NAVIGATION BAR -->
+  <header class="site-header">
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-wrapper">
+          <div class="topbar-info">
+            <a href="mailto:sandeep.gupta@snssystem.com" class="topbar-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>sandeep.gupta@snssystem.com</span>
+            </a>
+            <span class="topbar-divider">|</span>
+            <a href="tel:+12144940908" class="topbar-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>+1 214-494-0908</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="ZFin GPT Home">
+          <img src="images/zfingpt_logo.png" alt="ZFin GPT" width="160" height="52" decoding="async"
+            fetchpriority="high" style="object-fit: contain; height: 52px; max-height: 52px;" />
+        </a>
+
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+          ☰
+        </button>
+
+        <ul class="nav-menu" id="primary-nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#audit-modal" class="btn btn-primary btn-glow open-audit-modal">
+          Book a Free Automation Audit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: SERVICES PAGE -->
+  <main>
+
+    <!-- 1. Page Banner -->
+    <section class="section page-banner-section">
+      <div class="container" style="text-align: center;">
+        <div class="eyebrow" style="display: table; margin: 0 auto 16px;">FINANCIAL AUTOMATION INFRASTRUCTURE</div>
+        <h1 class="hero-headline" style="max-width: 900px; margin: 0 auto 20px;">
+          Automation Infrastructure, Built for <span class="gradient-text">Zoho Finance</span> & Enterprise Systems
+        </h1>
+        <p class="section-subtitle" style="font-size: 1.2rem; max-width: 760px; margin: 0 auto 28px;">
+          Four specialized ways ZFin GPT helps finance teams & enterprises move faster with AI and MCP automation,
+          without replacing what already works.
+        </p>
+        <a href="#audit-modal" class="btn btn-primary btn-glow open-audit-modal"
+          style="font-size: 1rem; padding: 14px 28px;">
+          Book a Free Automation Audit
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. Services at a Glance (Redesigned Matrix & Feature Grid) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">SERVICES AT A GLANCE</div>
+          <h2 class="section-title">Comparative Capability Matrix</h2>
+          <p class="section-subtitle">A clear <span style="white-space: nowrap;">side-by-side</span> snapshot of how our 4 core offerings transform enterprise
+            finance operations.</p>
+        </div>
+
+        <div class="grid grid-4" style="margin-bottom: 40px;">
+          <div class="glass-card" style="border-top: 4px solid var(--cyan-bright);">
+            <div
+              style="font-family: var(--font-mono); font-weight: 700; color: var(--cyan-bright); font-size: 0.8rem; margin-bottom: 8px;">
+              CORE 01</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">MCP Infrastructure</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;">Connects legacy REST APIs and
+              finance databases to AI reasoning agents.</p>
+            <div style="font-size: 0.8rem; color: var(--emerald-safe); font-weight: 600;">⚡ Time to Value: Days</div>
+          </div>
+
+          <div class="glass-card" style="border-top: 4px solid var(--violet-neon);">
+            <div
+              style="font-family: var(--font-mono); font-weight: 700; color: var(--violet-neon); font-size: 0.8rem; margin-bottom: 8px;">
+              CORE 02</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Email & Zoho Automation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;">Automates team inbox and
+              invoice triage inside Zoho Books & Mail.</p>
+            <div style="font-size: 0.8rem; color: var(--emerald-safe); font-weight: 600;">⚡ Time to Value: Days</div>
+          </div>
+
+          <div class="glass-card" style="border-top: 4px solid var(--amber-review);">
+            <div
+              style="font-family: var(--font-mono); font-weight: 700; color: var(--amber-review); font-size: 0.8rem; margin-bottom: 8px;">
+              CORE 03</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Financial Automation</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;">Automates 9 recurring cyclic
+              tasks: cash flow, commissions, <span style="white-space: nowrap;">month-end</span> close.</p>
+            <div style="font-size: 0.8rem; color: var(--cyan-bright); font-weight: 600;">⚡ Time to Value: <span style="white-space: nowrap;">1-2</span> Cycles
+            </div>
+          </div>
+
+          <div class="glass-card" style="border-top: 4px solid var(--emerald-safe);">
+            <div
+              style="font-family: var(--font-mono); font-weight: 700; color: var(--emerald-safe); font-size: 0.8rem; margin-bottom: 8px;">
+              CORE 04</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Custom AI Agents</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;"><span style="white-space: nowrap;">Role-scoped</span> financial AI
+              agents configured for your specific team workflow.</p>
+            <div style="font-size: 0.8rem; color: var(--cyan-bright); font-weight: 600;">⚡ Scope Dependent</div>
+          </div>
+        </div>
+
+        <div class="comparison-matrix-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature / Dimension</th>
+                <th>MCP Infrastructure</th>
+                <th>Email & Zoho Automation</th>
+                <th>Financial Automation</th>
+                <th>Custom AI Agents</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Best for</td>
+                <td>Legacy systems with REST API</td>
+                <td>Client/team inbox with repetitive replies</td>
+                <td>Recurring finance reporting cycles</td>
+                <td>Any department, any tool</td>
+              </tr>
+              <tr>
+                <td>Primary Systems</td>
+                <td>REST APIs, SQL, ERPs, SAP</td>
+                <td>Zoho Books, Mail, CRM & Claude</td>
+                <td>Zoho Finance, Bank Feeds, QuickBooks</td>
+                <td>Scoped to team role & Zia AI</td>
+              </tr>
+              <tr>
+                <td>Time to Value</td>
+                <td><span style="color:var(--cyan-bright); font-weight:700;">Days</span></td>
+                <td><span style="color:var(--cyan-bright); font-weight:700;">Days</span></td>
+                <td>1–3 reporting cycles</td>
+                <td>Depends on scope</td>
+              </tr>
+              <tr>
+                <td>Human Control Level</td>
+                <td>Configurable per action</td>
+                <td><span style="white-space: nowrap;">Draft-only</span> by default before distribution</td>
+                <td>Report review before distribution</td>
+                <td>100% Configurable approval guard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MCP Infrastructure for Legacy Software & Finance Endpoints -->
+    <section class="section" id="services-mcp">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 48px;">
+          <div>
+            <div class="eyebrow">SERVICE 01</div>
+            <h2 class="section-title">MCP Infrastructure for Legacy & Finance Software</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+              Most older finance and business software wasn't built to work with AI. But if it has a REST API, the way
+              most modern software talks to other software, we add an MCP translation layer on top of it. Think of MCP
+              as giving your legacy system a way to "speak AI," allowing Claude & Zia to look things up, reconcile
+              records, and take action inside it without needing a system rewrite.
+            </p>
+
+            <div class="grid grid-2" style="gap: 16px; margin-bottom: 24px;">
+              <div class="glass-card" style="padding: 20px; border-left: 3px solid var(--cyan-bright);">
+                <div style="font-weight: 700; color: var(--cyan-bright); margin-bottom: 4px;">Zero Code Rewrites</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                  We don't need to rebuild your legacy software or your migration project. We connect directly to your
+                  existing REST API.
+                </div>
+              </div>
+
+              <div class="glass-card" style="padding: 20px; border-left: 3px solid var(--violet-neon);">
+                <div style="font-weight: 700; color: var(--violet-neon); margin-bottom: 4px;"><span style="white-space: nowrap;">Role-Based</span> Scoping</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                  Specify exactly what an AI agent can read vs. act on, with 100% audit logging for full transparency.
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="background: rgba(14, 23, 42, 0.6); padding: 16px 20px; border-radius: 12px; border: 1px solid var(--border-subtle);">
+              <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem; margin-bottom: 4px;">💡 Real
+                Enterprise Example</div>
+              <div style="font-size: 0.875rem; color: var(--text-muted);">
+                A finance department running a custom ERP with REST APIs gets an MCP layer. Now an AI agent can query
+                vendor balances, verify invoice IDs, and output reconciled cash flow drafts in seconds.
+              </div>
+            </div>
+          </div>
+
+          <!-- Architectural Box Visual -->
+          <div class="glass-card"
+            style="background: rgba(8, 13, 27, 0.95); border-color: rgba(56, 189, 248, 0.35); padding: 32px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: var(--cyan-bright);">How ZFin GPT MCP Deployment
+              Works</h3>
+            <ol
+              style="padding-left: 20px; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px;">
+              <li><strong>API Discovery:</strong> We review your financial REST APIs and map endpoints.</li>
+              <li><strong>MCP Layer Build:</strong> We stand up the lightweight MCP translation gateway.</li>
+              <li><strong>Permission Scoping:</strong> We configure read/write permissions per system.</li>
+              <li><strong>Agent Activation:</strong> Your team starts issuing queries to Claude or Zia (same system,
+                instant AI capability).</li>
+            </ol>
+
+            <div
+              style="background: rgba(15, 23, 42, 0.9); padding: 16px; border-radius: 10px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-bright); border: 1px solid rgba(56, 189, 248, 0.2);">
+              [Legacy REST Endpoint] ──▶ [ZFin GPT MCP Gateway] ──▶ [Claude 3.5 / Zia Agent]
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Email Automation with Zoho + Claude -->
+    <section class="section section-alt" id="services-email">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 48px;">
+          <div>
+            <div class="eyebrow">SERVICE 02</div>
+            <h2 class="section-title">Zoho Finance & Email Automation</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+              Finance and <span style="white-space: nowrap;">client-facing</span> teams spend hours every day processing incoming vendor invoices, payment
+              confirmations, and client balance queries. We connect Zoho Books/Mail and Claude so those responses are
+              automatically drafted and recorded, waiting for human approval.
+            </p>
+
+            <div class="glass-card" style="margin-bottom: 24px; border-left: 4px solid var(--violet-neon);">
+              <div style="font-weight: 700; color: #c084fc; margin-bottom: 4px;">Human Approval Safety Guard</div>
+              <div style="font-size: 0.95rem; color: var(--text-muted);">
+                Nothing sends or posts automatically without a human reviewer reviewing and clicking approve. You get
+                automation speed with 100% human oversight.
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <div style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Real Inbox Example</div>
+              <div style="font-size: 0.95rem; color: var(--text-muted);">
+                A vendor emails an invoice. Within seconds, a draft reply is waiting in your Zoho Mail drafts with
+                invoice line items extracted into Zoho Books as a draft bill. You read it, check the total, and click
+                approve.
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card"
+            style="background: rgba(8, 13, 27, 0.95); border-color: rgba(192, 132, 252, 0.35); padding: 32px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: #c084fc;">Zoho + Claude Capabilities</h3>
+            <ul
+              style="padding-left: 20px; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+              <li>Drafts prepared directly inside your existing Zoho Mail inbox</li>
+              <li>Automated invoice & receipt parsing into Zoho Books</li>
+              <li>Filters out noise, newsletters, and <span style="white-space: nowrap;">auto-responders</span> automatically</li>
+              <li>Learns company tone, formal and threshold preferences</li>
+              <li>Flags missing information with a draft clarifying prompt</li>
+            </ul>
+
+            <div
+              style="background: rgba(15, 23, 42, 0.9); padding: 14px 18px; border-radius: 10px; border: 1px solid rgba(192, 132, 252, 0.3); color: var(--text-main); font-size: 0.85rem;">
+              ✓ <strong>100% Zoho Native:</strong> Works inside Zoho Books, Zoho Mail, and Zoho CRM seamlessly.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Financial Reporting & Automation (9 Workflows Grid) -->
+    <section class="section" id="services-finance">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">SERVICE 03</div>
+          <h2 class="section-title">Financial Reporting & Reconciliation</h2>
+          <p class="section-subtitle">
+            Finance teams repeat the same manual reporting work every week or month: pulling data, reconciling
+            spreadsheets, checking balances. ZFin GPT automates the assembly across 9 core financial workflows.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="glass-card" style="border-top: 3px solid var(--cyan-bright);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">💵</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(56, 189, 248, 0.12); color: var(--cyan-bright); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Weekly
+                Schedule</span>
+            </div>
+            <h3 style="color: var(--cyan-bright); font-size: 1.15rem; margin-bottom: 8px;">1. Weekly Cash Flow Runs</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Runs automatically every week,
+              reconciled directly against bank feeds, Zoho Books, and ERP data.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--cyan-bright);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">🎯</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(56, 189, 248, 0.12); color: var(--cyan-bright); padding: 2px 10px; border-radius: 100px; font-weight: 600;">CRM
+                Reconciled</span>
+            </div>
+            <h3 style="color: var(--cyan-bright); font-size: 1.15rem; margin-bottom: 8px;">2. Sales Rep Commissions</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Automated calculation and
+              reconciliation of sales commission payouts against Zoho CRM closed deals.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--cyan-bright);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">🏷️</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(56, 189, 248, 0.12); color: var(--cyan-bright); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Contract
+                Audit</span>
+            </div>
+            <h3 style="color: var(--cyan-bright); font-size: 1.15rem; margin-bottom: 8px;">3. Rebates & Discounts</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Continuous tracking and
+              calculation of vendor rebates and customer volume discounts per contract terms.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--violet-neon);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">👑</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(192, 132, 252, 0.12); color: var(--violet-neon); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Continuous</span>
+            </div>
+            <h3 style="color: var(--violet-neon); font-size: 1.15rem; margin-bottom: 8px;">4. Royalties Calculations
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Automated <span style="white-space: nowrap;">multi-tier</span> royalty
+              payouts calculated based on contractual licensing agreements & sales volume.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--violet-neon);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">📅</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(192, 132, 252, 0.12); color: var(--violet-neon); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Monthly
+                Cycle</span>
+            </div>
+            <h3 style="color: var(--violet-neon); font-size: 1.15rem; margin-bottom: 8px;">5. <span style="white-space: nowrap;">Month-End</span> Close</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Automates general ledger
+              assembly, intercompany transfers, and <span style="white-space: nowrap;">multi-department</span> ledger reconciliation.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--violet-neon);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">📊</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(192, 132, 252, 0.12); color: var(--violet-neon); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Variance
+                Check</span>
+            </div>
+            <h3 style="color: var(--violet-neon); font-size: 1.15rem; margin-bottom: 8px;">6. Budgeting & Variance</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;"><span style="white-space: nowrap;">Real-time</span> comparison of actual
+              departmental spending against monthly budget allocations.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--amber-review);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">🛒</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(251, 191, 36, 0.12); color: var(--amber-review); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Marketplace</span>
+            </div>
+            <h3 style="color: var(--amber-review); font-size: 1.15rem; margin-bottom: 8px;">7. Amazon Disbursements</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Automatic reconciliation of
+              Amazon Seller Central payouts, FBA fees, and return withholdings.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--amber-review);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">⚖️</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(251, 191, 36, 0.12); color: var(--amber-review); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Audit
+                Ready</span>
+            </div>
+            <h3 style="color: var(--amber-review); font-size: 1.15rem; margin-bottom: 8px;">8. Income Tax & Audit
+              Support</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">Prepares structured audit trails
+              and tax schedules for CPA review and quarterly filings.</p>
+          </div>
+
+          <div class="glass-card" style="border-top: 3px solid var(--emerald-safe);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div style="font-size: 1.5rem;">📈</div>
+              <span
+                style="font-size: 0.75rem; background: rgba(52, 211, 153, 0.12); color: var(--emerald-safe); padding: 2px 10px; border-radius: 100px; font-weight: 600;">Executive
+                View</span>
+            </div>
+            <h3 style="color: var(--emerald-safe); font-size: 1.15rem; margin-bottom: 8px;">9. Live Executive Console
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">A live executive dashboard
+              bringing cash flow, accounts receivable, and departmental metrics into one console.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Custom Financial AI Agents for Your Team -->
+    <section class="section section-alt" id="services-agents">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 48px;">
+          <div>
+            <div class="eyebrow">SERVICE 04</div>
+            <h2 class="section-title">Custom Financial AI Agents</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+              <span style="white-space: nowrap;">Off-the-shelf</span> AI tools only go so far. ZFin GPT configures agents, including Zoho's Zia, specifically
+              around your company's financial rules, chart of accounts, and approval chains.
+            </p>
+
+            <div class="glass-card" style="border-left: 4px solid var(--emerald-safe);">
+              <div style="font-weight: 700; color: var(--emerald-safe); margin-bottom: 4px;"><span style="white-space: nowrap;">Role-Scoped</span> Intelligence
+              </div>
+              <div style="font-size: 0.9rem; color: var(--text-muted);">
+                The Accounts Payable lead gets an agent scoped to invoice matching and vendor terms, while the CFO gets
+                an agent scoped to cash flow forecasting and variance analysis.
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card"
+            style="background: rgba(8, 13, 27, 0.95); border-color: rgba(52, 211, 153, 0.35); padding: 32px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: var(--emerald-safe);">Included Agent Capabilities
+            </h3>
+            <ul
+              style="padding-left: 20px; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 12px;">
+              <li><span style="white-space: nowrap;">Role-based</span> financial agent profiles (AP, AR, Treasury, Controller)</li>
+              <li>Zoho Zia configuration tailored to your chart of accounts</li>
+              <li>Rigorous <span style="white-space: nowrap;">fine-tuning</span> against real historical ledger transactions</li>
+              <li>Ongoing <span style="white-space: nowrap;">fine-tuning</span> as accounting policies evolve</li>
+              <li>100% compatible with Zoho Books, Zoho Inventory & Claude</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Who We Work With -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">BUILT FOR TEAMS LIKE YOURS</div>
+          <h2 class="section-title">Who We Work With</h2>
+          <p class="section-subtitle">Designed specifically for finance leaders, operations heads, and <span style="white-space: nowrap;">Zoho-powered</span>
+            businesses.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="glass-card">
+            <div style="font-size: 1.5rem; margin-bottom: 12px;">💼</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Finance Teams</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Teams with recurring reporting cycles: cash flow,
+              commissions, royalties, <span style="white-space: nowrap;">month-end</span> close.</p>
+          </div>
+          <div class="glass-card">
+            <div style="font-size: 1.5rem; margin-bottom: 12px;">⚡</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Zoho Organizations</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Companies running Zoho Books, Inventory, and CRM
+              looking to activate Zia and AI automation.</p>
+          </div>
+          <div class="glass-card">
+            <div style="font-size: 1.5rem; margin-bottom: 12px;">🛍️</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px;"><span style="white-space: nowrap;">E-Commerce</span> & Amazon</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Sellers needing automated reconciliation of
+              <span style="white-space: nowrap;">multi-channel</span> marketplace disbursements.</p>
+          </div>
+          <div class="glass-card">
+            <div style="font-size: 1.5rem; margin-bottom: 12px;">🏭</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px;"><span style="white-space: nowrap;">Operations-Heavy</span> Orgs</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Businesses running legacy inventory, logistics, or
+              custom ERP platforms with REST APIs.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. How We Engage -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">HOW WE WORK TOGETHER</div>
+          <h2 class="section-title">Engagement Model</h2>
+          <p class="section-subtitle">A <span style="white-space: nowrap;">low-risk</span> <span style="white-space: nowrap;">3-step</span> path from financial audit to live automation.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="glass-card" style="border-top: 4px solid var(--cyan-bright);">
+            <div
+              style="font-family: var(--font-mono); color: var(--cyan-bright); font-weight: 700; margin-bottom: 8px;">
+              STEP 01</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Free Automation Audit</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              We review your finance systems and current manual processes at no cost, and tell you honestly where
+              automation will deliver instant ROI.
+            </p>
+          </div>
+
+          <div class="glass-card" style="border-top: 4px solid var(--violet-neon);">
+            <div
+              style="font-family: var(--font-mono); color: var(--violet-neon); font-weight: 700; margin-bottom: 8px;">
+              STEP 02</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;"><span style="white-space: nowrap;">2-Week</span> Pilot</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              We implement one service, usually MCP infrastructure or a single reporting workflow, so you can see real
+              results before committing further.
+            </p>
+          </div>
+
+          <div class="glass-card" style="border-top: 4px solid var(--emerald-safe);">
+            <div
+              style="font-family: var(--font-mono); color: var(--emerald-safe); font-weight: 700; margin-bottom: 8px;">
+              STEP 03</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Scale & Automate</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              Once the pilot proves out, we expand to additional financial ledgers, email mailboxes, or custom report
+              types.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations & Stack Marquee Strip -->
+    <section class="section"
+      style="padding: 40px 0; background: rgba(8, 13, 27, 0.5); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <div
+          style="text-align: center; color: var(--text-muted); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px;">
+          Natively Compatible Infrastructure & Enterprise AI Standards
+        </div>
+        <div class="logo-marquee-wrapper">
+          <div class="logo-marquee-track">
+            <div class="logo-marquee-item"><img src="images/logos/claude.svg" alt="Claude 3.5 Sonnet" width="130"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/zoho.svg" alt="Zoho Books & Mail" width="120"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/zoho-zia.svg" alt="Zoho Zia AI" width="110"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/rest-api.svg" alt="REST APIs" width="120" height="32"
+                loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/postgresql.svg" alt="PostgreSQL" width="140"
+                height="32" loading="lazy" /></div>
+            <!-- Duplicated for seamless infinite scroll -->
+            <div class="logo-marquee-item"><img src="images/logos/claude.svg" alt="Claude 3.5 Sonnet" width="130"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/zoho.svg" alt="Zoho Books & Mail" width="120"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/zoho-zia.svg" alt="Zoho Zia AI" width="110"
+                height="32" loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/rest-api.svg" alt="REST APIs" width="120" height="32"
+                loading="lazy" /></div>
+            <div class="logo-marquee-item"><img src="images/logos/postgresql.svg" alt="PostgreSQL" width="140"
+                height="32" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Services FAQ -->
+    <section class="section">
+
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">SERVICES FAQ</div>
+          <h2 class="section-title">Common Questions About ZFin GPT Services</h2>
+        </div>
+
+        <div class="accordion-container">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-title">Can we start with just one service?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Yes, most financial engagements start with a single pilot (often cash flow automation or MCP
+              infrastructure for one legacy ERP) before expanding.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-title">Do you require access to our production financial ledgers?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              We work with scoped, approved access only, configured per system and per agent. You control what's
+              readable vs. actionable, and human review is required before any transaction posts.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-title">What if we don't use Zoho Finance?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              MCP Infrastructure works independently of Zoho. It's built to connect to any legacy or business software
+              with a REST API. Zoho Finance/Books integration is one path in, not a requirement, so <span style="white-space: nowrap;">non-Zoho</span> finance
+              teams can still fully use ZFin GPT via MCP Infrastructure.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-title">How is ZFin GPT different from hiring a developer to build custom integrations?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              MCP is an open standard, not a custom <span style="white-space: nowrap;">one-off</span> integration, so what we build isn't locked to a single
+              developer's implementation and holds up as your financial software changes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 10. Bottom CTA -->
+    <section class="section section-alt" style="text-align: center;">
+      <div class="container">
+        <h2 class="section-title">Not sure which financial service fits your stack?</h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto 24px;">
+          Let's discuss how a <span style="white-space: nowrap;">2-week</span> ZFin GPT pilot can transform your team's financial workflows.
+        </p>
+        <a href="#audit-modal" class="btn btn-primary btn-glow open-audit-modal"
+          style="font-size: 1rem; padding: 14px 28px; display: inline-flex;">
+          Book a Free Automation Audit
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL — FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="ZFin GPT Home">
+            <img src="images/zfingpt_logo.png" alt="ZFin GPT" width="150" height="48" loading="lazy" decoding="async"
+              style="object-fit: contain; height: 48px; max-height: 48px;" />
+          </a>
+          <p class="footer-tagline">
+            Organizing enterprise & financial infrastructure through AI automation.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-column-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-column-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html#services-mcp" class="footer-link">MCP Infrastructure</a></li>
+            <li><a href="services.html#services-email" class="footer-link">Email & Zoho Automation</a></li>
+            <li><a href="services.html#services-finance" class="footer-link">Financial Automation</a></li>
+            <li><a href="services.html#services-agents" class="footer-link">Custom Financial AI Agents</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-column-title">Connect</div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-top: 12px;">
+            <a href="mailto:sandeep.gupta@snssystem.com" class="footer-social-icon" aria-label="Email Sandeep Gupta"
+              title="sandeep.gupta@snssystem.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+12144940908" class="footer-social-icon" aria-label="Call +1 214-494-0908"
+              title="+1 214-494-0908">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sandeep-kumar-gupta-40472441/" target="_blank"
+              rel="noopener noreferrer" class="footer-social-icon" aria-label="Sandeep Kumar Gupta on LinkedIn"
+              title="Sandeep Kumar Gupta on LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom"
+        style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; width: 100%; font-size: 0.875rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 24px; color: #A7B5C8;">
+        <div>
+          © 2026 <a href="index.html" style="color: var(--cyan-bright); font-weight: 600; text-decoration: none;">ZFin
+            GPT</a>. All Rights Reserved.
+        </div>
+        <div>
+          Powered by <a href="http://newcenturywebdesign.com/" target="_blank" rel="noopener noreferrer"
+            style="color: var(--cyan-bright); font-weight: 600; text-decoration: none;">Newcenturywebdesign.com</a>, a
+          venture of <a href="http://snssystem.com/" target="_blank" rel="noopener noreferrer"
+            style="color: var(--cyan-bright); font-weight: 600; text-decoration: none;">SNSSystem.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUDIT BOOKING MODAL -->
+  <div class="modal-overlay" id="audit-modal">
+    <div class="modal-content" style="max-width: 600px; width: 92%; padding: 32px 24px;">
+      <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+      <div class="eyebrow" style="margin-bottom:8px;">FREE INFRASTRUCTURE AUDIT</div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Book a Free Automation Audit</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+        We'll analyze your current software stack and tell you where ZFin GPT automation will deliver instant ROI.
+      </p>
+
+      <!-- OFFICIAL ZOHO FORM IFRAME EMBED -->
+      <div class="zoho-form-container">
+        <iframe
+          aria-label="Send Us a Message"
+          frameborder="0"
+          src="https://forms.zohopublic.com/snsmanagement/form/SendUsaMessage/formperma/H_CS9riBaaABf_YYCQ-ahKw7mviyBecxkg-GWCNx3mk">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>

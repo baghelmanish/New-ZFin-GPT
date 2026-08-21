@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="120" height="32">
+  <path d="M28 10C20 10 14 16 14 24C14 30 18 35 24 37L22 42H27L30 38C34 38 38 34 38 28C38 18 34 10 28 10Z" fill="#336791"/>
+  <circle cx="22" cy="18" r="2.5" fill="#FFFFFF"/>
+  <text x="44" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="18" fill="#336791">PostgreSQL</text>
+</svg>

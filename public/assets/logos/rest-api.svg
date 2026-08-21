@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="120" height="32">
+  <defs>
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#85EA2D"/>
+      <stop offset="100%" stop-color="#00F2FE"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="25" r="18" fill="none" stroke="url(#apiGrad)" stroke-width="3"/>
+  <path d="M16 25H32M24 17V33" stroke="url(#apiGrad)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="24" cy="25" r="5" fill="#85EA2D"/>
+  <text x="50" y="32" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="20" fill="#FFFFFF">REST <tspan fill="#85EA2D">API</tspan></text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40" width="130" height="40">
+  <rect width="130" height="40" rx="8" fill="#1A1A2E"/>
+  <circle cx="22" cy="20" r="12" fill="#0088CC" opacity="0.9"/>
+  <text x="22" y="25" font-family="Outfit,sans-serif" font-weight="900" font-size="12" fill="#fff" text-anchor="middle">Zia</text>
+  <text x="78" y="26" font-family="Outfit,sans-serif" font-weight="700" font-size="13" fill="#F8FAFC" text-anchor="middle">Zoho Zia</text>
+</svg>
