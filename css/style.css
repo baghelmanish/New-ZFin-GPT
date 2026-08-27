@@ -1377,7 +1377,8 @@ h1, h2, h3, .hero-headline, .section-title {
   /* ── HEADER ── */
   .site-header { padding: 12px 0 !important; }
   .brand-logo img { height: 42px !important; max-height: 42px !important; }
-  .site-header .open-audit-modal { display: none !important; }
+  .site-header .open-audit-modal,
+  .site-header .header-audit-btn { display: none !important; }
   .mobile-toggle {
     margin-left: auto !important;
     margin-right: 0 !important;
