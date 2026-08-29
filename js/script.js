@@ -6,19 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('primary-nav-menu');
 
   // Highlight current page active nav link
-  const pathParts = window.location.pathname.split('/');
-  const currentFileName = pathParts.pop() || pathParts.pop() || '';
+  const cleanPath = window.location.pathname.replace(/\/$/, '').replace(/\.html$/, '');
+  const currentRoute = cleanPath.split('/').pop() || '';
+
   document.querySelectorAll('.nav-link').forEach(link => {
-    const rawHref = (link.getAttribute('href') || '');
-    // Handle absolute home URL
-    if (rawHref === 'https://zfingpt.com/') {
-      if (currentFileName === '' || currentFileName === 'index.html') {
+    const rawHref = link.getAttribute('href') || '';
+    const cleanHref = rawHref.replace(/^https?:\/\/[^\/]+/, '').replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '').split('#')[0];
+
+    link.classList.remove('active');
+    if (currentRoute === '' || currentRoute === 'index') {
+      if (cleanHref === '' || cleanHref === 'index' || rawHref === '/' || rawHref === 'https://zfingpt.com/') {
         link.classList.add('active');
       }
-      return;
-    }
-    const href = rawHref.replace(/\.html$/, '').split('#')[0];
-    if (href === currentFileName || (currentFileName === '' && href === '')) {
+    } else if (cleanHref === currentRoute) {
       link.classList.add('active');
     }
   });
