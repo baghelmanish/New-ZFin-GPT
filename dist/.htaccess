@@ -5,15 +5,19 @@
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
   RewriteRule ^index\.html$ https://zfingpt.com/ [R=301,L]
 
-  # Redirect .html extensions to clean URLs
+  # Redirect old about.html and /about to canonical /about-us
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /about(\.html)?(\s|\?) [NC]
+  RewriteRule ^about(\.html)?$ https://zfingpt.com/about-us [R=301,L]
+
+  # Redirect .html extensions to clean HTTPS URLs
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /services\.html\ HTTP/
-  RewriteRule ^services\.html$ /services [R=301,L]
+  RewriteRule ^services\.html$ https://zfingpt.com/services [R=301,L]
 
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /about-us\.html\ HTTP/
-  RewriteRule ^about-us\.html$ /about-us [R=301,L]
+  RewriteRule ^about-us\.html$ https://zfingpt.com/about-us [R=301,L]
 
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /contact\.html\ HTTP/
-  RewriteRule ^contact\.html$ /contact [R=301,L]
+  RewriteRule ^contact\.html$ https://zfingpt.com/contact [R=301,L]
 
   # Serve .html files for clean URLs (extensionless routing)
   RewriteCond %{REQUEST_FILENAME} !-f

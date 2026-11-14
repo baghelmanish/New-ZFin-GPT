@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Explicit crawl rules for major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://zfingpt.com/sitemap.xml

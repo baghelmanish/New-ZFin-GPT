@@ -19,6 +19,10 @@ export default defineConfig({
             req.url = '/services.html' + query;
           } else if (urlPath === '/about-us' || urlPath === '/about-us/') {
             req.url = '/about-us.html' + query;
+          } else if (urlPath === '/about' || urlPath === '/about/' || urlPath === '/about.html') {
+            res.writeHead(301, { Location: '/about-us' + query });
+            res.end();
+            return;
           } else if (urlPath === '/contact' || urlPath === '/contact/') {
             req.url = '/contact.html' + query;
           }
@@ -35,6 +39,10 @@ export default defineConfig({
             req.url = '/services.html' + query;
           } else if (urlPath === '/about-us' || urlPath === '/about-us/') {
             req.url = '/about-us.html' + query;
+          } else if (urlPath === '/about' || urlPath === '/about/' || urlPath === '/about.html') {
+            res.writeHead(301, { Location: '/about-us' + query });
+            res.end();
+            return;
           } else if (urlPath === '/contact' || urlPath === '/contact/') {
             req.url = '/contact.html' + query;
           }
@@ -51,9 +59,9 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         services: resolve(__dirname, 'services.html'),
         'about-us': resolve(__dirname, 'about-us.html'),
+        about: resolve(__dirname, 'about.html'),
         contact: resolve(__dirname, 'contact.html')
       }
     }
   }
 });
-

@@ -1,11 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40" width="130" height="40">
-  <rect width="130" height="40" rx="8" fill="#1A1A2E"/>
-  <rect x="8" y="10" width="22" height="20" rx="4" fill="#E42528"/>
-  <rect x="34" y="10" width="22" height="20" rx="4" fill="#0088CC"/>
-  <rect x="60" y="10" width="22" height="20" rx="4" fill="#2EAA44"/>
-  <rect x="86" y="10" width="22" height="20" rx="4" fill="#F4A212"/>
-  <text x="19" y="25" font-family="Outfit,sans-serif" font-weight="900" font-size="13" fill="#fff" text-anchor="middle">Z</text>
-  <text x="45" y="25" font-family="Outfit,sans-serif" font-weight="900" font-size="13" fill="#fff" text-anchor="middle">O</text>
-  <text x="71" y="25" font-family="Outfit,sans-serif" font-weight="900" font-size="13" fill="#fff" text-anchor="middle">H</text>
-  <text x="97" y="25" font-family="Outfit,sans-serif" font-weight="900" font-size="13" fill="#fff" text-anchor="middle">O</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="110" height="32">
+  <!-- Z block - Red -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="12" fill="#E42528"/>
+    <text x="40" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="56" fill="#FFFFFF" text-anchor="middle">Z</text>
+  </g>
+  <!-- O block - Green -->
+  <g transform="translate(100, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="12" fill="#2AA745"/>
+    <text x="40" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="56" fill="#FFFFFF" text-anchor="middle">O</text>
+  </g>
+  <!-- H block - Blue -->
+  <g transform="translate(190, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="12" fill="#0086D6"/>
+    <text x="40" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="56" fill="#FFFFFF" text-anchor="middle">H</text>
+  </g>
+  <!-- O block - Yellow -->
+  <g transform="translate(280, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="12" fill="#F4B400"/>
+    <text x="40" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="56" fill="#FFFFFF" text-anchor="middle">O</text>
+  </g>
 </svg>

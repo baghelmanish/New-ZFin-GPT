@@ -1,4 +1,6 @@
 /index.html https://zfingpt.com/ 301!
-/services.html /services 301!
-/about-us.html /about-us 301!
-/contact.html /contact 301!
+/about.html https://zfingpt.com/about-us 301!
+/about https://zfingpt.com/about-us 301!
+/about-us.html https://zfingpt.com/about-us 301!
+/services.html https://zfingpt.com/services 301!
+/contact.html https://zfingpt.com/contact 301!
